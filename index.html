@@ -11,20 +11,26 @@
         a[href^="https://www.link-group.eu"] { 
             color: red; 
         }
-            p[id=odd]:nth-child(odd){
-                color: blue;
-            }
-            
-            p[id=even]:nth-child(even){
-                color: red ;
-            }
-            p[id="new"]::after {content: " - NEW";
+
+
+        #second-div > p:nth-child(odd){
+                color: blue
+
+        }
+
+        #second-div > p:nth-child(even){
+                color: red
+        }
+
+        p:nth-child(8):hover{
+        font-style: italic;
+        }
+
+        #first-div > p:nth-of-type(n)::after {content: " - NEW";
             color: yellow
             }
             
-            p[id="hover"]:hover {
-            font-style: italic;
-            }
+          
     </style>
 </head>
 
@@ -36,19 +42,19 @@
     <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
     <div id="first-div">
         <h2>Subheading</h2>
-        <p id="new"> Paragraph 2</p>
-        <p id="new">Paragraph 3</p>
+        <p> Paragraph 2</p>
+        <p>Paragraph 3</p>
         <div id="second-div">
             <h3>Sub subheading</h3>
-            <p id="even">Paragraph 4</p>
-            <p id="odd">Paragraph 5</p>
-            <p id="even">Paragraph 6</p>
-            <p id="odd">Paragraph 7</p>
-            <p id="even">Paragraph 8</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
         </div>
     </div>
     <p>Paragraph 9</p>
-    <p id="hover">Paragraph 10</p>
+    <p>Paragraph 10</p>
 </body>
 
 </html>
